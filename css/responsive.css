@@ -1,0 +1,258 @@
+@media screen and (max-width: 992px) {
+    .hero h1 {
+        font-size: 3.8rem;
+    }
+    
+    .about-content {
+        gap: 30px;
+    }
+    
+    .hexagon {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hexagon-inner {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .contact-content {
+        gap: 30px;
+    }
+    
+    .footer-content {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 70px 0;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .typewriter h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .about-text h3 {
+        font-size: 1.8rem;
+    }
+    
+    .skill-category h3 {
+        font-size: 1.5rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-card .icon {
+        margin-bottom: 15px;
+    }
+    
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .typewriter h2 {
+        font-size: 1.2rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .hexagon {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hexagon-inner {
+        width: 190px;
+        height: 190px;
+    }
+    
+    .profile-placeholder span {
+        font-size: 3.5rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-btn {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .typewriter h2 {
+        font-size: 1.1rem;
+    }
+    
+    .social-icons {
+        gap: 10px;
+    }
+    
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .projects-filter {
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero h1 {
+        font-size: 5rem;
+    }
+    
+    .typewriter h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.3rem;
+    }
+    
+    .section-header h2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 0 50px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .scroll-down {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .glitch::before, .glitch::after {
+        animation: none !important;
+    }
+    
+    .scroll-down {
+        animation: none !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-light: #121212;
+        --text-light: #FFFFFF;
+    }
+}
+
+@media (forced-colors: active) {
+    .primary-btn, .secondary-btn {
+        border: 2px solid currentColor;
+    }
+    
+    .progress-bar {
+        border: 1px solid currentColor;
+    }
+}
+
+@media (hover: none) {
+    .nav-link:hover::after {
+        transform: scaleX(1);
+    }
+    
+    .project-card:hover .project-overlay {
+        opacity: 1;
+    }
+    
+    .project-card:hover .project-image img {
+        transform: none;
+    }
+}
