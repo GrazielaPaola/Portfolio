@@ -43,7 +43,7 @@ window.addEventListener('load', () => {
 
 function initTyped() {
     typed = new Typed('.typed-text', {
-        strings: ['Backend', 'Python', 'Django', 'Flutter', 'Mobile'],
+        strings: ['Backend','Mobile'],
         typeSpeed: 80,
         backSpeed: 60,
         backDelay: 2000,
